@@ -15,7 +15,7 @@ class _LoginScreenState extends State<LoginScreen> {
     final user = userCtrl.text.trim();
     final pass = passCtrl.text.trim();
 
-    // Simple local login for now
+    
     if (user == "dilshan" && pass == "123") {
       Navigator.pushReplacementNamed(context, "/dashboard");
     } else {
