@@ -26,7 +26,7 @@ class DashboardScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
 
-            // DASHBOARD CARD
+            // Dashboard card
             Card(
               elevation: 4,
               shape: RoundedRectangleBorder(
@@ -61,7 +61,7 @@ class DashboardScreen extends StatelessWidget {
 
             SizedBox(height: 40),
 
-            // ADD RECORD BUTTON
+            // Add record button
             ElevatedButton.icon(
               onPressed: () => Navigator.pushNamed(context, "/add"),
               icon: Icon(Icons.add),
