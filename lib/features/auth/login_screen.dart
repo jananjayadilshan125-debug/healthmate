@@ -15,7 +15,7 @@ class _LoginScreenState extends State<LoginScreen> {
     final user = userCtrl.text.trim();
     final pass = passCtrl.text.trim();
 
-    
+    //login
     if (user == "dilshan" && pass == "123") {
       Navigator.pushReplacementNamed(context, "/dashboard");
     } else {
@@ -34,9 +34,9 @@ class _LoginScreenState extends State<LoginScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
 
-              // -------------------------------------------------
-              //            YOUR PHOTO (Profile Image)
-              // -------------------------------------------------
+              
+              //MY PHOTO (Profile Image)
+              
               CircleAvatar(
                 radius: 55,
                 backgroundImage: AssetImage("assets/images/myphoto.jpg"),
