@@ -19,7 +19,7 @@ class _RecordListScreenState extends State<RecordListScreen> {
         Provider.of<RecordProvider>(context, listen: false).loadRecords());
   }
 
-  // Date picker -> write result into the text field state
+  // Date picker - write result into the text field state
   Future<void> pickDate() async {
     final d = await showDatePicker(
       context: context,
@@ -40,7 +40,7 @@ class _RecordListScreenState extends State<RecordListScreen> {
   Widget build(BuildContext context) {
     final provider = Provider.of<RecordProvider>(context);
 
-    // Filter records using contains so typed partials work (e.g. "2025-11")
+    // Filter records  (e.g. "2025-11")
     final filtered = provider.records.where((r) {
       final q = searchDateText.trim();
       if (q.isEmpty) return true;
