@@ -24,7 +24,7 @@ class _AddRecordScreenState extends State<AddRecordScreen> {
   void initState() {
     super.initState();
 
-    // If editing → load existing values
+    // If editing -load existing values
     if (widget.record != null) {
       stepsCtrl.text = widget.record!.steps.toString();
       calCtrl.text = widget.record!.calories.toString();
@@ -97,7 +97,7 @@ class _AddRecordScreenState extends State<AddRecordScreen> {
         padding: EdgeInsets.all(16),
         child: Column(
           children: [
-            // 📅 DATE PICKER
+            // DATE PICKER
             GestureDetector(
               onTap: pickDate,
               child: Container(
